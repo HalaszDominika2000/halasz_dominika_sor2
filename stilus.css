@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(design/beer-new_401732638.jpg);
+}
+
+
+
+
+h1, h2, p, th, td {
+    font-family: Arial, Verdana, sans-serif;
+    color: beige;
+    font-size: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+/*rácsszerkezet*/
+main {
+display: grid;
+grid-template-columns: 2fr 1fr;
+grid-template-areas: 
+"h h"
+"n n"
+"as ar"
+"f f";
+
+}
+
+header {
+    grid-area: h;
+}
+
+nav {
+    grid-area: n;
+}
+
+aside {
+    grid-area: as;
+}
+
+article {
+    grid-area: ar;
+}
+
+footer {
+    grid-area: f;
+}
+
+
+
+
+/*reszponzivitás telefonon*/
+@media only screen and (max-width){
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "h"
+    "n"
+    "as"
+    "ar"
+    "f" ; 
+    width:150%;
+    max-width: 1000px;
+    margin: auto;
+    /*background-color: rgb(red, green, blue);*/
+
+}
+
+}
