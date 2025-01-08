@@ -4,6 +4,41 @@
 
 header {
     background-image: url(design/beer-new_401732638.jpg);
+    height: 300px;
+    background-size:cover;
+    font-family: Garamond;
+    font-weight: bold;
+}
+
+body {
+    background-image: url(design/teglafal.jpg);
+}
+
+main {
+    background-color: #333333;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li:hover {
+    background-color: rgb(orange);
+    margin: auto;
+}
+
+nav li a {
+    text-decoration: none;
+    color: beige;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    color: beige;
 }
 
 
@@ -60,7 +95,7 @@ footer {
 
 
 /*reszponzivitás telefonon*/
-@media only screen and (max-width){
+@media only screen and (max-width:700px){
 main {
     display: grid;
     grid-template-columns: 1fr;
